@@ -1,0 +1,3 @@
+isNotNil	cps/defers.html#isNotNil.t,untyped	defers: isNotNil(x: untyped): bool	
+hasDefer	cps/defers.html#hasDefer,NormNode	defers: hasDefer(n: NormNode): bool	
+rewriteDefer	cps/defers.html#rewriteDefer,NormNode	defers: rewriteDefer(n: NormNode): NormNode	

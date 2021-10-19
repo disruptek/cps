@@ -1,0 +1,7 @@
+firstReturn	cps/returns.html#firstReturn,NormNode	returns: firstReturn(p: NormNode): NormNode	
+makeReturn	cps/returns.html#makeReturn,Name,NormNode	returns: makeReturn(contType: Name; n: NormNode): NormNode	
+makeReturn	cps/returns.html#makeReturn,Name,NormNode,NormNode	returns: makeReturn(contType: Name; pre, n: NormNode): NormNode	
+pass	cps/returns.html#pass.t,Continuation,Continuation	returns: pass(source: Continuation; destination: Continuation): Continuation	
+terminator	cps/returns.html#terminator,Name,Name,NormNode	returns: terminator(c: Name; contType: Name; T: NormNode): NormNode	
+tailCall	cps/returns.html#tailCall,Name,Name,Name,NormNode	returns: tailCall(cont, contType, to: Name; jump: NormNode = nil): NormNode	
+jumperCall	cps/returns.html#jumperCall,Name,Name,Name,NormNode	returns: jumperCall(cont, contType, to: Name; via: NormNode): NormNode	

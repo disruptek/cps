@@ -1,0 +1,82 @@
+cpsLift	cps/spec.html#cpsLift.t	spec: cpsLift()	
+cpsCall	cps/spec.html#cpsCall.t	spec: cpsCall()	
+cpsMagicCall	cps/spec.html#cpsMagicCall.t	spec: cpsMagicCall()	
+cpsVoodooCall	cps/spec.html#cpsVoodooCall.t	spec: cpsVoodooCall()	
+cpsMustJump	cps/spec.html#cpsMustJump.t	spec: cpsMustJump()	
+cpsPending	cps/spec.html#cpsPending.t	spec: cpsPending()	
+cpsBreak	cps/spec.html#cpsBreak.t,typed	spec: cpsBreak(label: typed = nil)	
+cpsContinue	cps/spec.html#cpsContinue.t	spec: cpsContinue()	
+cpsCont	cps/spec.html#cpsCont.t	spec: cpsCont()	
+cpsBootstrap	cps/spec.html#cpsBootstrap.t,typed	spec: cpsBootstrap(whelp: typed)	
+cpsEnvironment	cps/spec.html#cpsEnvironment.t,typed	spec: cpsEnvironment(tipe: typed)	
+cpsTerminate	cps/spec.html#cpsTerminate.t	spec: cpsTerminate()	
+cpsHasException	cps/spec.html#cpsHasException.t,typed,typed	spec: cpsHasException(cont, ex: typed)	
+cpsStackFrames	cps/spec.html#cpsStackFrames	spec: cpsStackFrames	
+cpsTraceDeque	cps/spec.html#cpsTraceDeque	spec: cpsTraceDeque	
+traceDequeSize	cps/spec.html#traceDequeSize	spec: traceDequeSize	
+Continuation	cps/spec.html#Continuation	spec: Continuation	
+ContinuationProc	cps/spec.html#ContinuationProc	spec: ContinuationProc	
+TraceFrame	cps/spec.html#TraceFrame	spec: TraceFrame	
+Coop	cps/spec.html#Coop	Hook.Coop	
+Trace	cps/spec.html#Trace	Hook.Trace	
+Alloc	cps/spec.html#Alloc	Hook.Alloc	
+Dealloc	cps/spec.html#Dealloc	Hook.Dealloc	
+Pass	cps/spec.html#Pass	Hook.Pass	
+Boot	cps/spec.html#Boot	Hook.Boot	
+Unwind	cps/spec.html#Unwind	Hook.Unwind	
+Head	cps/spec.html#Head	Hook.Head	
+Tail	cps/spec.html#Tail	Hook.Tail	
+Stack	cps/spec.html#Stack	Hook.Stack	
+Hook	cps/spec.html#Hook	spec: Hook	
+dot	cps/spec.html#dot.t,NimNode,NimNode	spec: dot(a, b: NimNode): NimNode	
+dot	cps/spec.html#dot.t,NimNode,string	spec: dot(a: NimNode; b: string): NimNode	
+eq	cps/spec.html#eq.t,NimNode,NimNode	spec: eq(a, b: NimNode): NimNode	
+eq	cps/spec.html#eq.t,string,NimNode	spec: eq(a: string; b: NimNode): NimNode	
+colon	cps/spec.html#colon.t,NimNode,NimNode	spec: colon(a, b: NimNode): NimNode	
+colon	cps/spec.html#colon.t,string,NimNode	spec: colon(a: string; b: NimNode): NimNode	
+colon	cps/spec.html#colon.t,,	spec: colon(a: string | NimNode; b: string | int): NimNode	
+filterPragma	cps/spec.html#filterPragma,seq[PragmaAtom],Name	spec: filterPragma(ns: seq[PragmaAtom]; liftee: Name): NormNode	
+stripPragma	cps/spec.html#stripPragma,PragmaStmt,static[string]	spec: stripPragma(n: PragmaStmt; s: static[string]): PragmaStmt	
+stripPragma	cps/spec.html#stripPragma,NormNode,static[string]	spec: stripPragma(n: NormNode; s: static[string]): NormNode	
+hash	cps/spec.html#hash,NimNode	spec: hash(n: NimNode): Hash	
+newCpsPending	cps/spec.html#newCpsPending	spec: newCpsPending(): PragmaStmt	
+isCpsPending	cps/spec.html#isCpsPending,NormNode	spec: isCpsPending(n: NormNode): bool	
+newCpsBreak	cps/spec.html#newCpsBreak,NormNode	spec: newCpsBreak(n: NormNode; label = newNilLit().NormNode): NormNode	
+isCpsBreak	cps/spec.html#isCpsBreak,NormNode	spec: isCpsBreak(n: NormNode): bool	
+newCpsContinue	cps/spec.html#newCpsContinue,NormNode	spec: newCpsContinue(n: NormNode): NormNode	
+isCpsContinue	cps/spec.html#isCpsContinue,NormNode	spec: isCpsContinue(n: NormNode): bool	
+breakLabel	cps/spec.html#breakLabel,NormNode	spec: breakLabel(n: NormNode): NormNode	
+isCpsCont	cps/spec.html#isCpsCont,NormNode	spec: isCpsCont(n: NormNode): bool	
+getContSym	cps/spec.html#getContSym,NormNode	spec: getContSym(n: NormNode): Name	
+newCpsTerminate	cps/spec.html#newCpsTerminate	spec: newCpsTerminate(): NormNode	
+isCpsTerminate	cps/spec.html#isCpsTerminate,NormNode	spec: isCpsTerminate(n: NormNode): bool	
+isScopeExit	cps/spec.html#isScopeExit,NormNode	spec: isScopeExit(n: NormNode): bool	
+rewriteIt	cps/spec.html#rewriteIt.t,typed,untyped	spec: rewriteIt(n: typed; body: untyped): NormNode	
+debugAnnotation	cps/spec.html#debugAnnotation.t,typed,NimNode,untyped	spec: debugAnnotation(s: typed; n: NimNode; body: untyped)	
+matchCpsBreak	cps/spec.html#matchCpsBreak,NormNode	spec: matchCpsBreak(label: NormNode): NormMatcher	
+matchCpsBreak	cps/spec.html#matchCpsBreak	spec: matchCpsBreak(): NormMatcher	
+wrappedFinally	cps/spec.html#wrappedFinally,NormNode,NormNode	spec: wrappedFinally(n, final: NormNode): NormNode	
+isVoodooCall	cps/spec.html#isVoodooCall,NormNode	spec: isVoodooCall(n: NormNode): bool	
+isCpsCall	cps/spec.html#isCpsCall,NormNode	spec: isCpsCall(n: NormNode): bool	
+isCpsBlock	cps/spec.html#isCpsBlock,NormNode	spec: isCpsBlock(n: NormNode): bool	
+pragmaArgument	cps/spec.html#pragmaArgument,NormNode,string	spec: pragmaArgument(n: NormNode; s: string): NormNode	
+bootstrapSymbol	cps/spec.html#bootstrapSymbol,NimNode	spec: bootstrapSymbol(n: NimNode): NormNode	
+enbasen	cps/spec.html#enbasen,NimNode	spec: enbasen(n: NimNode): TypeExpr	
+State	cps/spec.html#State	spec: State	
+makeErrorShim	cps/spec.html#makeErrorShim,NimNode	spec: makeErrorShim(n: NimNode): NimNode	
+cpsMagic	cps/spec.html#cpsMagic.m,untyped	spec: cpsMagic(n: untyped): untyped	
+cpsVoodoo	cps/spec.html#cpsVoodoo.m,untyped	spec: cpsVoodoo(n: untyped): untyped	
+renderStackFrames	cps/spec.html#renderStackFrames,Continuation	spec: renderStackFrames(c: Continuation): seq[string]	
+renderStackFrames	cps/spec.html#renderStackFrames	spec: renderStackFrames(): seq[string]	
+renderTraceDeque	cps/spec.html#renderTraceDeque,Continuation	spec: renderTraceDeque(c: Continuation): seq[string]	
+renderTraceDeque	cps/spec.html#renderTraceDeque	spec: renderTraceDeque(): seq[string]	
+writeStackFrames	cps/spec.html#writeStackFrames,Continuation	spec: writeStackFrames(c: Continuation)	
+writeStackFrames	cps/spec.html#writeStackFrames	spec: writeStackFrames()	
+writeTraceDeque	cps/spec.html#writeTraceDeque,Continuation	spec: writeTraceDeque(c: Continuation)	
+writeTraceDeque	cps/spec.html#writeTraceDeque	spec: writeTraceDeque()	
+trampoline	cps/spec.html#trampoline,sinkT	spec: trampoline[T: Continuation](c: sink T): T	
+trampolineIt	cps/spec.html#trampolineIt.m,T,untyped	spec: trampolineIt[T: Continuation](supplied: T; body: untyped)	
+ensimilate	cps/spec.html#ensimilate,NormNode,NormNode	spec: ensimilate(source, destination: NormNode): Call	
+nilAsEmpty	cps/spec.html#nilAsEmpty,NimNode	spec: nilAsEmpty(n: NimNode): NimNode	
+emptyAsNil	cps/spec.html#emptyAsNil,NimNode	spec: emptyAsNil(n: NimNode): NimNode	
+etype	cps/spec.html#etype.m	spec: etype(e: enum): string	

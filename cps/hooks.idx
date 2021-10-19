@@ -1,0 +1,11 @@
+introduce	cps/hooks.html#introduce,Hook,NormNode	hooks: introduce(hook: Hook; n: NormNode)	
+introduce	cps/hooks.html#introduce,NormNode,set[Hook]	hooks: introduce(n: NormNode; hooks: set[Hook])	
+findColonLit	cps/hooks.html#findColonLit,NimNode,string,typedesc	hooks: findColonLit(n: NimNode; s: string; T: typedesc): T:type	
+makeLineInfo	cps/hooks.html#makeLineInfo,NimNode	hooks: makeLineInfo(n: NimNode): LineInfo	
+makeLineInfo	cps/hooks.html#makeLineInfo.t,LineInfo	hooks: makeLineInfo(n: LineInfo): NimNode	
+sym	cps/hooks.html#sym,Hook	hooks: sym(hook: Hook): Name	
+nameForNode	cps/hooks.html#nameForNode,NimNode	hooks: nameForNode(n: NimNode): string	
+hook	cps/hooks.html#hook,static[Hook],NormNode	hooks: hook(hook: static[Hook]; n: NormNode): NormNode	
+hook	cps/hooks.html#hook,static[Hook],NormNode,NormNode	hooks: hook(hook: static[Hook]; a, b: NormNode): NormNode	
+initFrame	cps/hooks.html#initFrame,Hook,string,LineInfo	hooks: initFrame(hook: Hook; fun: string; info: LineInfo): NimNode	
+updateLineInfoForContinuationStackFrame	cps/hooks.html#updateLineInfoForContinuationStackFrame,NimNode,NimNode	hooks: updateLineInfoForContinuationStackFrame(c, n: NimNode): NimNode	

@@ -1,0 +1,28 @@
+NodeFilter	cps/rewrites.html#NodeFilter	rewrites: NodeFilter	
+NormalizingFilter	cps/rewrites.html#NormalizingFilter	rewrites: NormalizingFilter	
+NormFilter	cps/rewrites.html#NormFilter	rewrites: NormFilter	
+Matcher	cps/rewrites.html#Matcher	rewrites: Matcher	
+NormMatcher	cps/rewrites.html#NormMatcher	rewrites: NormMatcher	
+NormNode	cps/rewrites.html#NormNode	rewrites: NormNode	
+filter	cps/rewrites.html#filter,NimNode,NodeFilter	rewrites: filter(n: NimNode; f: NodeFilter): NimNode	
+filter	cps/rewrites.html#filter,NimNode,NormalizingFilter	rewrites: filter(n: NimNode; f: NormalizingFilter): NormNode	
+filter	cps/rewrites.html#filter,NormNode,NormFilter	rewrites: filter(n: NormNode; f: NormFilter): NormNode	
+isEmpty	cps/rewrites.html#isEmpty,NimNode	rewrites: isEmpty(n: NimNode): bool	
+errorAst	cps/rewrites.html#errorAst,string,NimNode	rewrites: errorAst(s: string; info: NimNode = nil): NormNode	
+errorAst	cps/rewrites.html#errorAst,,string	rewrites: errorAst(n: NimNode | NormNode; s = &quot;creepy ast&quot;): NormNode	
+desym	cps/rewrites.html#desym,NimNode	rewrites: desym(n: NimNode): NimNode	
+resymCall	cps/rewrites.html#resymCall,NimNode,NimNode,NimNode	rewrites: resymCall(n: NimNode; sym: NimNode; field: NimNode): NimNode	
+resymCall	cps/rewrites.html#resymCall,NormNode,NormNode,NormNode	rewrites: resymCall(n, sym, field: NormNode): NormNode	
+resym	cps/rewrites.html#resym,NimNode,NimNode,NimNode	rewrites: resym(n: NimNode; sym: NimNode; field: NimNode): NimNode	
+resym	cps/rewrites.html#resym,NormNode,NormNode,NormNode	rewrites: resym(n, sym, field: NormNode): NormNode	
+replacedSymsWithIdents	cps/rewrites.html#replacedSymsWithIdents,NimNode	rewrites: replacedSymsWithIdents(n: NimNode): NimNode	
+normalizingRewrites	cps/rewrites.html#normalizingRewrites,NimNode	rewrites: normalizingRewrites(n: NimNode): NormNode	
+workaroundRewrites	cps/rewrites.html#workaroundRewrites,NormNode	rewrites: workaroundRewrites(n: NormNode): NormNode	
+replace	cps/rewrites.html#replace,NimNode,Matcher,NimNode	rewrites: replace(n: NimNode; match: Matcher; replacement: NimNode): NimNode	
+replace	cps/rewrites.html#replace,NimNode,NormMatcher,NormNode	rewrites: replace(n: NimNode; match: NormMatcher; replacement: NormNode): NormNode	
+replace	cps/rewrites.html#replace,NormNode,NormMatcher,NormNode	rewrites: replace(n: NormNode; match: NormMatcher; replacement: NormNode): NormNode	
+replace	cps/rewrites.html#replace.t,NimNode,NimNode,untyped	rewrites: replace(n, noob: NimNode; body: untyped): NimNode	
+replace	cps/rewrites.html#replace.t,NormNode,NormNode,untyped	rewrites: replace(n, noob: NormNode; body: untyped): NormNode	
+multiReplace	cps/rewrites.html#multiReplace,NimNode,varargs[]	rewrites: multiReplace(n: NimNode; replacements: varargs[(Matcher, NimNode)]): NimNode	
+multiReplace	cps/rewrites.html#multiReplace,NormNode,varargs[]	rewrites: multiReplace(n: NormNode; replacements: varargs[(Matcher, NormNode)]): NormNode	
+multiReplace	cps/rewrites.html#multiReplace,NormNode,varargs[]_2	rewrites: multiReplace(n: NormNode; replacements: varargs[(NormMatcher, NormNode)]): NormNode	

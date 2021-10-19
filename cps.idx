@@ -1,0 +1,17 @@
+state	cps.html#state,Continuation	cps: state(c: Continuation): State	
+running	cps.html#running.t,Continuation	cps: running(c: Continuation): bool	
+finished	cps.html#finished.t,Continuation	cps: finished(c: Continuation): bool	
+dismissed	cps.html#dismissed.t,Continuation	cps: dismissed(c: Continuation): bool	
+cps	cps.html#cps.m,typed,typed	cps: cps(T: typed; n: typed): untyped	
+whelpIt	cps.html#whelpIt.t,typed,untyped	cps: whelpIt(input: typed; body: untyped): untyped	
+whelp	cps.html#whelp.m,typed	cps: whelp(call: typed): untyped	
+whelp	cps.html#whelp.m,Continuation,typed	cps: whelp(parent: Continuation; call: typed): untyped	
+head	cps.html#head.t,T	cps: head[T: Continuation](first: T): T	
+tail	cps.html#tail,Continuation,T	cps: tail[T: Continuation](parent: Continuation; child: T): T	
+coop	cps.html#coop.t,T	cps: coop[T: Continuation](c: T): T	
+boot	cps.html#boot.t,T	cps: boot[T: Continuation](c: T): T	
+traceDeque	cps.html#traceDeque,Hook,NimNode,NimNode,string,LineInfo,NimNode	cps: traceDeque(hook: Hook; c, n: NimNode; fun: string; info: LineInfo; body: NimNode): NimNode	
+stack	cps.html#stack.m,TraceFrame,T	cps: stack[T: Continuation](frame: TraceFrame; target: T): T	
+trace	cps.html#trace.m,static[Hook],typed,typed,string,LineInfo,typed	cps: trace(hook: static[Hook]; source, target: typed; fun: string; info: LineInfo;\n      body: typed): untyped	
+alloc	cps.html#alloc,typedesc[T],typedesc	cps: alloc[T: Continuation](U: typedesc[T]; E: typedesc): E:type	
+dealloc	cps.html#dealloc,sinkT,typedesc[T]	cps: dealloc[T: Continuation](c: sink T; E: typedesc[T]): E:type	

@@ -1,0 +1,246 @@
+Name	cps/normalizedast.html#Name	normalizedast: Name	
+Ident	cps/normalizedast.html#Ident	normalizedast: Ident	
+Sym	cps/normalizedast.html#Sym	normalizedast: Sym	
+DotExpr	cps/normalizedast.html#DotExpr	normalizedast: DotExpr	
+TypeExpr	cps/normalizedast.html#TypeExpr	normalizedast: TypeExpr	
+TypeExprObj	cps/normalizedast.html#TypeExprObj	normalizedast: TypeExprObj	
+TypeExprRef	cps/normalizedast.html#TypeExprRef	normalizedast: TypeExprRef	
+IdentDef	cps/normalizedast.html#IdentDef	normalizedast: IdentDef	
+RoutineDef	cps/normalizedast.html#RoutineDef	normalizedast: RoutineDef	
+ProcDef	cps/normalizedast.html#ProcDef	normalizedast: ProcDef	
+FormalParams	cps/normalizedast.html#FormalParams	normalizedast: FormalParams	
+RoutineParam	cps/normalizedast.html#RoutineParam	normalizedast: RoutineParam	
+Call	cps/normalizedast.html#Call	normalizedast: Call	
+CallKind	cps/normalizedast.html#CallKind	normalizedast: CallKind	
+Pragma	cps/normalizedast.html#Pragma	normalizedast: Pragma	
+PragmaStmt	cps/normalizedast.html#PragmaStmt	normalizedast: PragmaStmt	
+PragmaBlock	cps/normalizedast.html#PragmaBlock	normalizedast: PragmaBlock	
+PragmaExpr	cps/normalizedast.html#PragmaExpr	normalizedast: PragmaExpr	
+PragmaAtom	cps/normalizedast.html#PragmaAtom	normalizedast: PragmaAtom	
+TypeSection	cps/normalizedast.html#TypeSection	normalizedast: TypeSection	
+TypeDef	cps/normalizedast.html#TypeDef	normalizedast: TypeDef	
+VarLet	cps/normalizedast.html#VarLet	normalizedast: VarLet	
+VarLetTuple	cps/normalizedast.html#VarLetTuple	normalizedast: VarLetTuple	
+VarLetIdentDef	cps/normalizedast.html#VarLetIdentDef	normalizedast: VarLetIdentDef	
+LetSection	cps/normalizedast.html#LetSection	normalizedast: LetSection	
+VarSection	cps/normalizedast.html#VarSection	normalizedast: VarSection	
+VarIdentDef	cps/normalizedast.html#VarIdentDef	normalizedast: VarIdentDef	
+LetIdentDef	cps/normalizedast.html#LetIdentDef	normalizedast: LetIdentDef	
+IdentDefVarLet	cps/normalizedast.html#IdentDefVarLet	normalizedast: IdentDefVarLet	
+TupleDefVarLet	cps/normalizedast.html#TupleDefVarLet	normalizedast: TupleDefVarLet	
+IdentDefLet	cps/normalizedast.html#IdentDefLet	normalizedast: IdentDefLet	
+IdentDefVar	cps/normalizedast.html#IdentDefVar	normalizedast: IdentDefVar	
+TypeExprLike	cps/normalizedast.html#TypeExprLike	normalizedast: TypeExprLike	
+errorGot	cps/normalizedast.html#errorGot,string,NormNode	normalizedast: errorGot(msg: string; n: NormNode; got = treeRepr(NimNode(n)))	
+normalizeProcDef	cps/normalizedast.html#normalizeProcDef,NimNode	normalizedast: normalizeProcDef(n: NimNode): ProcDef	
+normalizeCall	cps/normalizedast.html#normalizeCall,NimNode	normalizedast: normalizeCall(n: NimNode): Call	
+copy	cps/normalizedast.html#copy,NormNode	normalizedast: copy(n: NormNode): NormNode	
+copyNimNode	cps/normalizedast.html#copyNimNode,NormNode	normalizedast: copyNimNode(n: NormNode): NormNode	
+copyNimTree	cps/normalizedast.html#copyNimTree,NormNode	normalizedast: copyNimTree(n: NormNode): NormNode	
+ConvNodes	cps/normalizedast.html#ConvNodes	normalizedast: ConvNodes	
+AccessNodes	cps/normalizedast.html#AccessNodes	normalizedast: AccessNodes	
+ConstructNodes	cps/normalizedast.html#ConstructNodes	normalizedast: ConstructNodes	
+HiddenNodes	cps/normalizedast.html#HiddenNodes	normalizedast: HiddenNodes	
+cNormNodeToNimNode	cps/normalizedast.html#cNormNodeToNimNode.c,NormNode	normalizedast: cNormNodeToNimNode(n`gensym0: NormNode): NimNode	
+cIdentDefToNimNode	cps/normalizedast.html#cIdentDefToNimNode.c,IdentDef	normalizedast: cIdentDefToNimNode(n`gensym1: IdentDef): NimNode	
+cIdentToNimNode	cps/normalizedast.html#cIdentToNimNode.c,Ident	normalizedast: cIdentToNimNode(n`gensym2: Ident): NimNode	
+cVarSectionToNimNode	cps/normalizedast.html#cVarSectionToNimNode.c,VarSection	normalizedast: cVarSectionToNimNode(n`gensym3: VarSection): NimNode	
+cRoutineDefToNimNode	cps/normalizedast.html#cRoutineDefToNimNode.c,RoutineDef	normalizedast: cRoutineDefToNimNode(n`gensym4: RoutineDef): NimNode	
+cNameToNormNode	cps/normalizedast.html#cNameToNormNode.c,Name	normalizedast: cNameToNormNode(n`gensym23: Name): NormNode	
+cTypeExprToNormNode	cps/normalizedast.html#cTypeExprToNormNode.c,TypeExpr	normalizedast: cTypeExprToNormNode(n`gensym24: TypeExpr): NormNode	
+cCallToNormNode	cps/normalizedast.html#cCallToNormNode.c,Call	normalizedast: cCallToNormNode(n`gensym25: Call): NormNode	
+cPragmaStmtToNormNode	cps/normalizedast.html#cPragmaStmtToNormNode.c,PragmaStmt	normalizedast: cPragmaStmtToNormNode(n`gensym26: PragmaStmt): NormNode	
+cPragmaAtomToNormNode	cps/normalizedast.html#cPragmaAtomToNormNode.c,PragmaAtom	normalizedast: cPragmaAtomToNormNode(n`gensym27: PragmaAtom): NormNode	
+cIdentDefToNormNode	cps/normalizedast.html#cIdentDefToNormNode.c,IdentDef	normalizedast: cIdentDefToNormNode(n`gensym28: IdentDef): NormNode	
+cRoutineDefToNormNode	cps/normalizedast.html#cRoutineDefToNormNode.c,RoutineDef	normalizedast: cRoutineDefToNormNode(n`gensym29: RoutineDef): NormNode	
+cProcDefToNormNode	cps/normalizedast.html#cProcDefToNormNode.c,ProcDef	normalizedast: cProcDefToNormNode(n`gensym30: ProcDef): NormNode	
+cFormalParamsToNormNode	cps/normalizedast.html#cFormalParamsToNormNode.c,FormalParams	normalizedast: cFormalParamsToNormNode(n`gensym31: FormalParams): NormNode	
+cRoutineParamToNormNode	cps/normalizedast.html#cRoutineParamToNormNode.c,RoutineParam	normalizedast: cRoutineParamToNormNode(n`gensym32: RoutineParam): NormNode	
+cVarSectionToNormNode	cps/normalizedast.html#cVarSectionToNormNode.c,VarSection	normalizedast: cVarSectionToNormNode(n`gensym33: VarSection): NormNode	
+cLetSectionToNormNode	cps/normalizedast.html#cLetSectionToNormNode.c,LetSection	normalizedast: cLetSectionToNormNode(n`gensym34: LetSection): NormNode	
+cVarLetToNormNode	cps/normalizedast.html#cVarLetToNormNode.c,VarLet	normalizedast: cVarLetToNormNode(n`gensym35: VarLet): NormNode	
+cVarLetIdentDefToNormNode	cps/normalizedast.html#cVarLetIdentDefToNormNode.c,VarLetIdentDef	normalizedast: cVarLetIdentDefToNormNode(n`gensym36: VarLetIdentDef): NormNode	
+cVarLetTupleToNormNode	cps/normalizedast.html#cVarLetTupleToNormNode.c,VarLetTuple	normalizedast: cVarLetTupleToNormNode(n`gensym37: VarLetTuple): NormNode	
+cDefVarLetToNormNode	cps/normalizedast.html#cDefVarLetToNormNode.c,DefVarLet	normalizedast: cDefVarLetToNormNode(n`gensym38: DefVarLet): NormNode	
+cIdentDefLetToNormNode	cps/normalizedast.html#cIdentDefLetToNormNode.c,IdentDefLet	normalizedast: cIdentDefLetToNormNode(n`gensym39: IdentDefLet): NormNode	
+cSymToNormNode	cps/normalizedast.html#cSymToNormNode.c,Sym	normalizedast: cSymToNormNode(n`gensym40: Sym): NormNode	
+cIdentDefLetToIdentDef	cps/normalizedast.html#cIdentDefLetToIdentDef.c,IdentDefLet	normalizedast: cIdentDefLetToIdentDef(n`gensym41: IdentDefLet): IdentDef	
+cIdentDefVarToIdentDef	cps/normalizedast.html#cIdentDefVarToIdentDef.c,IdentDefVar	normalizedast: cIdentDefVarToIdentDef(n`gensym42: IdentDefVar): IdentDef	
+cRoutineParamToIdentDef	cps/normalizedast.html#cRoutineParamToIdentDef.c,RoutineParam	normalizedast: cRoutineParamToIdentDef(n`gensym43: RoutineParam): IdentDef	
+cLetIdentDefToVarLetIdentDef	cps/normalizedast.html#cLetIdentDefToVarLetIdentDef.c,LetIdentDef	normalizedast: cLetIdentDefToVarLetIdentDef(n`gensym44: LetIdentDef): VarLetIdentDef	
+cVarIdentDefToVarLetIdentDef	cps/normalizedast.html#cVarIdentDefToVarLetIdentDef.c,VarIdentDef	normalizedast: cVarIdentDefToVarLetIdentDef(n`gensym45: VarIdentDef): VarLetIdentDef	
+cProcDefToRoutineDef	cps/normalizedast.html#cProcDefToRoutineDef.c,ProcDef	normalizedast: cProcDefToRoutineDef(n`gensym46: ProcDef): RoutineDef	
+cTypeExprRefToTypeExpr	cps/normalizedast.html#cTypeExprRefToTypeExpr.c,TypeExprRef	normalizedast: cTypeExprRefToTypeExpr(n`gensym47: TypeExprRef): TypeExpr	
+newEmptyNormNode	cps/normalizedast.html#newEmptyNormNode	normalizedast: newEmptyNormNode(): NormNode	
+onlyNormalizedNode	cps/normalizedast.html#onlyNormalizedNode,T	normalizedast: onlyNormalizedNode[T: distinct](n: T): NormNode	
+upgradeToNormalizedNode	cps/normalizedast.html#upgradeToNormalizedNode,T	normalizedast: upgradeToNormalizedNode[T](n: T): NormNode	
+desym	cps/normalizedast.html#desym,T,	normalizedast: desym[T: Desymable](n: T; sym: NimNode | Name): T	
+hash	cps/normalizedast.html#hash.t,NormNode	normalizedast: hash(n: NormNode): Hash	
+`$`	cps/normalizedast.html#$,NormNode	normalizedast: `$`(n: NormNode): string	
+len	cps/normalizedast.html#len,NormNode	normalizedast: len(n: NormNode): int	
+kind	cps/normalizedast.html#kind,NormNode	normalizedast: kind(n: NormNode): NimNodeKind	
+add	cps/normalizedast.html#add,,NormNode	normalizedast: add(f: NimNode | NormNode; c: NormNode): NormNode	
+findChild	cps/normalizedast.html#findChild.t,NormNode,untyped	normalizedast: findChild(n: NormNode; cond: untyped): NormNode	
+getImpl	cps/normalizedast.html#getImpl,NormNode	normalizedast: getImpl(n: NormNode): NormNode	
+getTypeInst	cps/normalizedast.html#getTypeInst,NormNode	normalizedast: getTypeInst(n: NormNode): TypeExpr	
+RecursiveNode	cps/normalizedast.html#RecursiveNode	normalizedast: RecursiveNode	
+add	cps/normalizedast.html#add,T,NormalizedVarargs	normalizedast: add[T: RecursiveNode](f: T; cs: NormalizedVarargs): T	
+`[]`	cps/normalizedast.html#[],T,int	normalizedast: `[]`[T: RecursiveNode](n: T; i: int): T	
+`[]`	cps/normalizedast.html#[],T,BackwardsIndex	normalizedast: `[]`[T: RecursiveNode](n: T; i: BackwardsIndex): T	
+`[]`	cps/normalizedast.html#[],R,HSlice[T,U]	normalizedast: `[]`[R: RecursiveNode; T, U](n: R; x: HSlice[T, U]): seq[R]	
+`[]=`	cps/normalizedast.html#[]=,NormNode,int,NormNode	normalizedast: `[]=`(n: NormNode; i: int; child: NormNode)	
+`[]=`	cps/normalizedast.html#[]=,NormNode,BackwardsIndex,NormNode	normalizedast: `[]=`(n: NormNode; i: BackwardsIndex; child: NormNode)	
+last	cps/normalizedast.html#last,T	normalizedast: last[T: RecursiveNode](n: T): T	
+getPragmaName	cps/normalizedast.html#getPragmaName,NimNode	normalizedast: getPragmaName(n: NimNode): NimNode	
+copyLineInfo	cps/normalizedast.html#copyLineInfo,NormNode,NormNode	normalizedast: copyLineInfo(arg, info: NormNode)	
+copyLineInfo	cps/normalizedast.html#copyLineInfo,NormNode,NimNode	normalizedast: copyLineInfo(arg: NormNode; info: NimNode)	
+items	cps/normalizedast.html#items.i,NormNode	normalizedast: items(n: NormNode): NormNode	
+pairs	cps/normalizedast.html#pairs.i,NormNode	normalizedast: pairs(n: NormNode): (int, NormNode)	
+newStmtList	cps/normalizedast.html#newStmtList,AnyNodeVarargs	normalizedast: newStmtList(stmts: AnyNodeVarargs): NormNode	
+newTree	cps/normalizedast.html#newTree,NimNodeKind,AnyNodeVarargs	normalizedast: newTree(kind: NimNodeKind; n: AnyNodeVarargs): NormNode	
+newNodeAndTransformIt	cps/normalizedast.html#newNodeAndTransformIt.t,NimNode,untyped	normalizedast: newNodeAndTransformIt(n: NimNode; body: untyped): untyped	
+copyNodeAndTransformIt	cps/normalizedast.html#copyNodeAndTransformIt.t,NimNode,untyped	normalizedast: copyNodeAndTransformIt(n: NimNode; body: untyped): untyped	
+wrap	cps/normalizedast.html#wrap,NimNodeKind,NormNode	normalizedast: wrap(kind: NimNodeKind; n: NormNode): NormNode	
+seqNormalizedToSeqNimNode	cps/normalizedast.html#seqNormalizedToSeqNimNode.c,seq[NormNode]	normalizedast: seqNormalizedToSeqNimNode(n: seq[NormNode]): seq[NimNode]	
+hash	cps/normalizedast.html#hash.t,Name	normalizedast: hash(n: Name): Hash	
+isNil	cps/normalizedast.html#isNil,Name	normalizedast: isNil(n: Name): bool	
+`==`	cps/normalizedast.html#==,Name,Name	normalizedast: `==`(a, b: Name): bool	
+`==`	cps/normalizedast.html#==,NimNode,Name	normalizedast: `==`(a: NimNode; b: Name): bool	
+`$`	cps/normalizedast.html#$,Name	normalizedast: `$`(a: Name): string	
+strVal	cps/normalizedast.html#strVal,Name	normalizedast: strVal(n: Name): string	
+isSymbol	cps/normalizedast.html#isSymbol,Name	normalizedast: isSymbol(n: Name): bool	
+asName	cps/normalizedast.html#asName,NormNode	normalizedast: asName(n`gensym49: NormNode): Name	
+asNameAllowEmpty	cps/normalizedast.html#asNameAllowEmpty,NormNode	normalizedast: asNameAllowEmpty(n`gensym51: NormNode): Name	
+asName	cps/normalizedast.html#asName,NimNode	normalizedast: asName(n: NimNode): Name	
+asNameAllowEmpty	cps/normalizedast.html#asNameAllowEmpty,NimNode	normalizedast: asNameAllowEmpty(n: NimNode): Name	
+asName	cps/normalizedast.html#asName,string	normalizedast: asName(n: string): Name	
+genSymType	cps/normalizedast.html#genSymType,string,NormNode	normalizedast: genSymType(n: string; info: NormNode = nil): Name	
+genSymVar	cps/normalizedast.html#genSymVar,string,NormNode	normalizedast: genSymVar(n: string = &quot;&quot;; info: NormNode = nil): Name	
+genSymLet	cps/normalizedast.html#genSymLet,string,NormNode	normalizedast: genSymLet(n: string = &quot;&quot;; info: NormNode = nil): Name	
+genSymProc	cps/normalizedast.html#genSymProc,string,NormNode	normalizedast: genSymProc(n: string; info: NormNode = nil): Name	
+genSymField	cps/normalizedast.html#genSymField,string,NormNode	normalizedast: genSymField(n: string; info: NormNode = nil): Name	
+genSymUnknown	cps/normalizedast.html#genSymUnknown,string,NormNode	normalizedast: genSymUnknown(n: string; info: NormNode = nil): Name	
+desym	cps/normalizedast.html#desym,Name	normalizedast: desym(n: Name): Name	
+resym	cps/normalizedast.html#resym,NormNode,Name,Name	normalizedast: resym(fragment: NormNode; sym, replacement: Name): NormNode	
+genField	cps/normalizedast.html#genField,string	normalizedast: genField(ident = &quot;&quot;): Name	
+bindName	cps/normalizedast.html#bindName,staticstring	normalizedast: bindName(n: static string): Name	
+bindName	cps/normalizedast.html#bindName,staticstring,staticBindSymRule	normalizedast: bindName(n: static string; rule: static BindSymRule): Name	
+typeInst	cps/normalizedast.html#typeInst,Name	normalizedast: typeInst(n: Name): TypeExpr	
+isExported	cps/normalizedast.html#isExported,Name	normalizedast: isExported(n: Name): bool	
+eqIdent	cps/normalizedast.html#eqIdent,,string	normalizedast: eqIdent(a: Name | NimNode; b: string): bool	
+eqIdent	cps/normalizedast.html#eqIdent,,	normalizedast: eqIdent(a: Name | NimNode; b: distinct Name | NimNode): bool	
+eqIdent	cps/normalizedast.html#eqIdent,NormNode,Name	normalizedast: eqIdent(a: NormNode; b: Name): bool	
+asName	cps/normalizedast.html#asName,TypeExpr	normalizedast: asName(n: TypeExpr): Name	
+asSym	cps/normalizedast.html#asSym,NormNode	normalizedast: asSym(n`gensym59: NormNode): Sym	
+cSymToName	cps/normalizedast.html#cSymToName.c,Sym	normalizedast: cSymToName(n`gensym61: Sym): Name	
+typeInst	cps/normalizedast.html#typeInst,Sym	normalizedast: typeInst(n: Sym): TypeExpr	
+ExprLike	cps/normalizedast.html#ExprLike	normalizedast: ExprLike	
+newDotExpr	cps/normalizedast.html#newDotExpr,ExprLike,	normalizedast: newDotExpr(l`gensym62: ExprLike; r`gensym62: distinct ExprLike): NormNode	
+dot	cps/normalizedast.html#dot.t,NormNode,NormNode	normalizedast: dot(a, b: NormNode): NormNode	
+dot	cps/normalizedast.html#dot.t,NormNode,string	normalizedast: dot(a: NormNode; b: string): NormNode	
+newColonExpr	cps/normalizedast.html#newColonExpr,ExprLike,	normalizedast: newColonExpr(l`gensym63: ExprLike; r`gensym63: distinct ExprLike): NormNode	
+newAssignment	cps/normalizedast.html#newAssignment,ExprLike,	normalizedast: newAssignment(l`gensym64: ExprLike; r`gensym64: distinct ExprLike): NormNode	
+newCall	cps/normalizedast.html#newCall,NormNode,AnyNodeVarargs	normalizedast: newCall(n: NormNode; args: AnyNodeVarargs): Call	
+newCall	cps/normalizedast.html#newCall,Name,AnyNodeVarargs	normalizedast: newCall(n: Name; args: AnyNodeVarargs): Call	
+newCall	cps/normalizedast.html#newCall,string,AnyNodeVarargs	normalizedast: newCall(n: string; args: AnyNodeVarargs): Call	
+asTypeSection	cps/normalizedast.html#asTypeSection,NormNode	normalizedast: asTypeSection(n`gensym65: NormNode): TypeSection	
+asTypeDef	cps/normalizedast.html#asTypeDef,NormNode	normalizedast: asTypeDef(n`gensym67: NormNode): TypeDef	
+asTypeExpr	cps/normalizedast.html#asTypeExpr,NormNode	normalizedast: asTypeExpr(n`gensym69: NormNode): TypeExpr	
+asTypeExprAllowEmpty	cps/normalizedast.html#asTypeExprAllowEmpty,NormNode	normalizedast: asTypeExprAllowEmpty(n`gensym71: NormNode): TypeExpr	
+isNil	cps/normalizedast.html#isNil,TypeExpr	normalizedast: isNil(n: TypeExpr): bool	
+`==`	cps/normalizedast.html#==,TypeExpr,TypeExpr	normalizedast: `==`(a, b: TypeExpr): bool	
+typeKind	cps/normalizedast.html#typeKind,TypeExpr	normalizedast: typeKind(n: TypeExpr): NimTypeKind	
+sameType	cps/normalizedast.html#sameType,TypeExpr,TypeExpr	normalizedast: sameType(a, b: TypeExpr): bool	
+asTypeExprObj	cps/normalizedast.html#asTypeExprObj,NormNode	normalizedast: asTypeExprObj(n`gensym73: NormNode): TypeExprObj	
+asTypeExprRef	cps/normalizedast.html#asTypeExprRef,NormNode	normalizedast: asTypeExprRef(n`gensym75: NormNode): TypeExprRef	
+newRefType	cps/normalizedast.html#newRefType,Name	normalizedast: newRefType(n: Name): TypeExprRef	
+asPragmaAtom	cps/normalizedast.html#asPragmaAtom,Name	normalizedast: asPragmaAtom(n: Name): PragmaAtom	
+newPragmaColonExpr	cps/normalizedast.html#newPragmaColonExpr,static[string],NormNode	normalizedast: newPragmaColonExpr(n: static[string]; r: NormNode): PragmaAtom	
+getPragmaName	cps/normalizedast.html#getPragmaName,PragmaAtom	normalizedast: getPragmaName(n: PragmaAtom): Name	
+IdentDefLike	cps/normalizedast.html#IdentDefLike	normalizedast: IdentDefLike	
+name	cps/normalizedast.html#name,IdentDefLike	normalizedast: name(n: IdentDefLike): Name	
+DefLike	cps/normalizedast.html#DefLike	normalizedast: DefLike	
+typ	cps/normalizedast.html#typ,DefLike	normalizedast: typ(n: DefLike): TypeExpr	
+val	cps/normalizedast.html#val,DefLike	normalizedast: val(n: DefLike): NormNode	
+hasValue	cps/normalizedast.html#hasValue,DefLike	normalizedast: hasValue(n: DefLike): bool	
+hasType	cps/normalizedast.html#hasType,DefLike	normalizedast: hasType(n: DefLike): bool	
+inferTypFromImpl	cps/normalizedast.html#inferTypFromImpl,DefLike	normalizedast: inferTypFromImpl(n: DefLike): TypeExpr	
+asIdentDefs	cps/normalizedast.html#asIdentDefs,NimNode	normalizedast: asIdentDefs(n: NimNode): IdentDef	
+newIdentDef	cps/normalizedast.html#newIdentDef,string,TypeExprLike	normalizedast: newIdentDef(n: string; t: TypeExprLike; val = newEmptyNode()): IdentDef	
+newIdentDef	cps/normalizedast.html#newIdentDef,Name,TypeExprLike	normalizedast: newIdentDef(n: Name; t: TypeExprLike; val = newEmptyNode()): IdentDef	
+newIdentDef	cps/normalizedast.html#newIdentDef,Name,NormNode	normalizedast: newIdentDef(n: Name; val: NormNode): IdentDef	
+LetSectionLike	cps/normalizedast.html#LetSectionLike	normalizedast: LetSectionLike	
+VarSectionLike	cps/normalizedast.html#VarSectionLike	normalizedast: VarSectionLike	
+VarLetLike	cps/normalizedast.html#VarLetLike	normalizedast: VarLetLike	
+def	cps/normalizedast.html#def,VarLetLike	normalizedast: def(n: VarLetLike): DefVarLet | TupleDefVarLet	
+val	cps/normalizedast.html#val,VarLetLike	normalizedast: val(n: VarLetLike): NormNode	
+typ	cps/normalizedast.html#typ,VarLetLike	normalizedast: typ(n: VarLetLike): TypeExpr	
+kind	cps/normalizedast.html#kind,VarLetLike	normalizedast: kind(n: VarLetLike): NimNodeKind	
+hasValue	cps/normalizedast.html#hasValue,VarLetLike	normalizedast: hasValue(n: VarLetLike): bool	
+isTuple	cps/normalizedast.html#isTuple,VarLetLike	normalizedast: isTuple(n: VarLetLike): bool	
+VarLetIdentDefLike	cps/normalizedast.html#VarLetIdentDefLike	normalizedast: VarLetIdentDefLike	
+identdef	cps/normalizedast.html#identdef,VarLetIdentDef	normalizedast: identdef(n: VarLetIdentDefLike): IdentDef	
+name	cps/normalizedast.html#name,VarLetIdentDef	normalizedast: name(n: VarLetIdentDefLike): Name	
+inferTypFromImpl	cps/normalizedast.html#inferTypFromImpl,VarLetIdentDef	normalizedast: inferTypFromImpl(n: VarLetIdentDefLike): TypeExpr	
+asVarLet	cps/normalizedast.html#asVarLet,NimNode	normalizedast: asVarLet(n: NimNode): VarLet	
+asVarLetTuple	cps/normalizedast.html#asVarLetTuple,VarLet	normalizedast: asVarLetTuple(n: VarLet): VarLetTuple	
+asVarLetIdentDef	cps/normalizedast.html#asVarLetIdentDef,VarLet	normalizedast: asVarLetIdentDef(n: VarLet): VarLetIdentDef	
+clone	cps/normalizedast.html#clone,VarLet,NimNode	normalizedast: clone(n: VarLet; value: NimNode = nil): VarLet	
+indexNamePairs	cps/normalizedast.html#indexNamePairs.i,VarLetTuple	normalizedast: indexNamePairs(n: VarLetTuple): (int, Name)	
+newVarLetIdentDef	cps/normalizedast.html#newVarLetIdentDef,NimNodeKind,IdentDef	normalizedast: newVarLetIdentDef(kind: NimNodeKind; i: IdentDef): VarLetIdentDef	
+newVarLetIdentDef	cps/normalizedast.html#newVarLetIdentDef,NimNodeKind,Name,TypeExprLike,NimNode	normalizedast: newVarLetIdentDef(kind: NimNodeKind; name: Name; typ: TypeExprLike; val: NimNode): VarLetIdentDef	
+newVarIdentDef	cps/normalizedast.html#newVarIdentDef,IdentDef	normalizedast: newVarIdentDef(i: IdentDef): VarIdentDef	
+newVarSection	cps/normalizedast.html#newVarSection,IdentDef	normalizedast: newVarSection(i: IdentDef): VarSection	
+newVarSection	cps/normalizedast.html#newVarSection,Name,TypeExprLike	normalizedast: newVarSection(n: Name; t: TypeExprLike; val = newEmptyNode()): VarSection	
+newLetIdentDef	cps/normalizedast.html#newLetIdentDef,IdentDef	normalizedast: newLetIdentDef(i: IdentDef): LetIdentDef	
+newLetIdentDef	cps/normalizedast.html#newLetIdentDef,Name,NormNode	normalizedast: newLetIdentDef(n: Name; val: NormNode): LetIdentDef	
+newLetIdentDef	cps/normalizedast.html#newLetIdentDef,Name,TypeExprLike	normalizedast: newLetIdentDef(n: Name; t: TypeExprLike; val = newEmptyNode()): LetIdentDef	
+newIdentDefVar	cps/normalizedast.html#newIdentDefVar,IdentDef	normalizedast: newIdentDefVar(i: IdentDef): IdentDefVar	
+newIdentDefVar	cps/normalizedast.html#newIdentDefVar,Name,TypeExprLike	normalizedast: newIdentDefVar(n: Name; t: TypeExprLike; val = newEmptyNode()): IdentDefVar	
+PragmaLike	cps/normalizedast.html#PragmaLike	normalizedast: PragmaLike	
+items	cps/normalizedast.html#items.i,PragmaLike	normalizedast: items(n: PragmaLike): PragmaAtom	
+hasPragma	cps/normalizedast.html#hasPragma,PragmaLike,static[string]	normalizedast: hasPragma(n: PragmaLike; s: static[string]): bool	
+asPragmaStmt	cps/normalizedast.html#asPragmaStmt,NormNode	normalizedast: asPragmaStmt(n`gensym97: NormNode): PragmaStmt	
+asPragmaStmt	cps/normalizedast.html#asPragmaStmt,Name	normalizedast: asPragmaStmt(n: Name): PragmaStmt	
+newPragmaStmt	cps/normalizedast.html#newPragmaStmt,varargs[PragmaAtom]	normalizedast: newPragmaStmt(es: varargs[PragmaAtom]): PragmaStmt	
+newPragmaStmt	cps/normalizedast.html#newPragmaStmt,Name	normalizedast: newPragmaStmt(n: Name): PragmaStmt	
+newPragmaStmtWithInfo	cps/normalizedast.html#newPragmaStmtWithInfo,NormNode,varargs[PragmaAtom]	normalizedast: newPragmaStmtWithInfo(inf: NormNode; es: varargs[PragmaAtom]): PragmaStmt	
+asPragmaBlock	cps/normalizedast.html#asPragmaBlock,NormNode	normalizedast: asPragmaBlock(n`gensym99: NormNode): PragmaBlock	
+PragmaHaver	cps/normalizedast.html#PragmaHaver	normalizedast: PragmaHaver	
+pragma	cps/normalizedast.html#pragma,PragmaHaver	normalizedast: pragma(n: PragmaHaver): PragmaLike	
+hasPragma	cps/normalizedast.html#hasPragma,PragmaHaver,static[string]	normalizedast: hasPragma(n: PragmaHaver; s: static[string]): bool	
+RoutineDefLike	cps/normalizedast.html#RoutineDefLike	normalizedast: RoutineDefLike	
+addPragma	cps/normalizedast.html#addPragma,RoutineDefLike,Name	normalizedast: addPragma(n: RoutineDefLike; prag: Name)	
+addPragma	cps/normalizedast.html#addPragma,RoutineDefLike,string	normalizedast: addPragma(n: RoutineDefLike; prag: string)	
+addPragma	cps/normalizedast.html#addPragma,RoutineDefLike,Name,NimNode	normalizedast: addPragma(n: RoutineDefLike; prag: Name; pragArg: NimNode)	
+addPragma	cps/normalizedast.html#addPragma,RoutineDefLike,Name,Name	normalizedast: addPragma(n: RoutineDefLike; prag: Name; pragArg: Name)	
+addPragma	cps/normalizedast.html#addPragma,RoutineDefLike,Name,openArray[Name]	normalizedast: addPragma(n: RoutineDefLike; prag: Name; pragArgs: openArray[Name])	
+asCallKind	cps/normalizedast.html#asCallKind,NormNode	normalizedast: asCallKind(n`gensym101: NormNode): CallKind	
+asCall	cps/normalizedast.html#asCall,NormNode	normalizedast: asCall(n`gensym103: NormNode): Call	
+ifCallThenIt	cps/normalizedast.html#ifCallThenIt.t,NormNode,untyped	normalizedast: ifCallThenIt(n: NormNode; body: untyped)	
+ifCallKindThenIt	cps/normalizedast.html#ifCallKindThenIt.t,NormNode,untyped	normalizedast: ifCallKindThenIt(n: NormNode; body: untyped)	
+name	cps/normalizedast.html#name,Call	normalizedast: name(n: Call): Name	
+prependArg	cps/normalizedast.html#prependArg,Call,NormNode	normalizedast: prependArg(n: Call; arg: NormNode)	
+canGetImpl	cps/normalizedast.html#canGetImpl,Call	normalizedast: canGetImpl(n: Call): bool	
+hasImpl	cps/normalizedast.html#hasImpl,Call	normalizedast: hasImpl(n: Call): bool	
+impl	cps/normalizedast.html#impl,Call	normalizedast: impl(n: Call): RoutineDef	
+resymCall	cps/normalizedast.html#resymCall,Call,NormNode,NormNode	normalizedast: resymCall(n: Call; sym, field: NormNode): Call	
+desym	cps/normalizedast.html#desym,Call	normalizedast: desym(n: Call)	
+newFormalParams	cps/normalizedast.html#newFormalParams,TypeExpr,varargs[IdentDef]	normalizedast: newFormalParams(ret: TypeExpr; ps: varargs[IdentDef]): FormalParams	
+asRoutineDef	cps/normalizedast.html#asRoutineDef,NormNode	normalizedast: asRoutineDef(n`gensym106: NormNode): RoutineDef	
+name	cps/normalizedast.html#name,RoutineDef	normalizedast: name(n: RoutineDef): Name	
+name=	cps/normalizedast.html#name=,RoutineDef,Name	normalizedast: name=(n: RoutineDef; name: Name)	
+body	cps/normalizedast.html#body,RoutineDef	normalizedast: body(n: RoutineDef): NormNode	
+body=	cps/normalizedast.html#body=,RoutineDef,NormNode	normalizedast: body=(n: RoutineDef; b: NormNode)	
+formalParams	cps/normalizedast.html#formalParams,RoutineDef	normalizedast: formalParams(n: RoutineDef): FormalParams	
+formalParams=	cps/normalizedast.html#formalParams=,RoutineDef,FormalParams	normalizedast: formalParams=(n: RoutineDef; f: FormalParams)	
+firstCallParam	cps/normalizedast.html#firstCallParam,RoutineDef	normalizedast: firstCallParam(n: RoutineDef): RoutineParam	
+pragma=	cps/normalizedast.html#pragma=,RoutineDef,PragmaStmt	normalizedast: pragma=(n: RoutineDef; p: PragmaStmt)	
+newProcDef	cps/normalizedast.html#newProcDef,Name,TypeExpr,varargs[IdentDef]	normalizedast: newProcDef(name: Name; retType: TypeExpr; callParams: varargs[IdentDef]): ProcDef	
+asProcDef	cps/normalizedast.html#asProcDef,NormNode	normalizedast: asProcDef(n`gensym108: NormNode): ProcDef	
+pragma=	cps/normalizedast.html#pragma=,ProcDef,PragmaStmt	normalizedast: pragma=(n: ProcDef; p: PragmaStmt)	
+returnParam	cps/normalizedast.html#returnParam,ProcDef	normalizedast: returnParam(n: ProcDef): TypeExpr	
+returnParam=	cps/normalizedast.html#returnParam=,ProcDef,Name	normalizedast: returnParam=(n: ProcDef; ret: Name)	
+callingParams	cps/normalizedast.html#callingParams.i,ProcDef	normalizedast: callingParams(n: ProcDef): RoutineParam	
+clone	cps/normalizedast.html#clone,ProcDef,NimNode	normalizedast: clone(n: ProcDef; body: NimNode = nil): ProcDef	
+hasPragma	cps/normalizedast.html#hasPragma,NormNode,static[string]	normalizedast: hasPragma(n: NormNode; s: static[string]): bool	

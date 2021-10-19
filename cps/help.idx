@@ -1,0 +1,6 @@
+cpsDebug	cps/help.html#cpsDebug	help: cpsDebug	
+comments	cps/help.html#comments	help: comments	
+doc	cps/help.html#doc,string	help: doc(s: string): NimNode	
+doc	cps/help.html#doc,NimNode,string	help: doc(n: NimNode; s: string)	
+debug	cps/help.html#debug.t,varargs[untyped]	help: debug(ignore: varargs[untyped])	
+lineAndFile	cps/help.html#lineAndFile.t,NimNode	help: lineAndFile(n: NimNode): string	

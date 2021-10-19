@@ -1,0 +1,29 @@
+Env	cps/environment.html#Env	environment: Env	
+CachePair	cps/environment.html#CachePair	environment: CachePair	
+len	cps/environment.html#len,Env	environment: len(e: Env): int	
+isEmpty	cps/environment.html#isEmpty,Env	environment: isEmpty(e: Env): bool	
+inherits	cps/environment.html#inherits,Env	environment: inherits(e: Env): Name	
+identity	cps/environment.html#identity,Env	environment: identity(e: Env): Name	
+isDirty	cps/environment.html#isDirty,Env	environment: isDirty(e: Env): bool	
+root	cps/environment.html#root,Env	environment: root(e: Env): Name	
+maybeConvertToRoot	cps/environment.html#maybeConvertToRoot,Env,NormNode	environment: maybeConvertToRoot(e: Env; locals: NormNode): NormNode	
+makeType	cps/environment.html#makeType,Env	environment: makeType(e: Env): NimNode	
+first	cps/environment.html#first,Env	environment: first(e: Env): Name	
+firstDef	cps/environment.html#firstDef,Env	environment: firstDef(e: Env): IdentDef	
+get	cps/environment.html#get,Env	environment: get(e: Env): NormNode	
+newEnv	cps/environment.html#newEnv,Env	environment: newEnv(parent: Env; copy = off): Env	
+storeType	cps/environment.html#storeType,Env	environment: storeType(e: Env; force = off): Env	
+newEnv	cps/environment.html#newEnv,Name,NormNode,Name,NormNode	environment: newEnv(c: Name; store: var NormNode; via: Name; rs: NormNode): Env	
+newEnv	cps/environment.html#newEnv,NormNode,Name,NormNode	environment: newEnv(store: var NormNode; via: Name; rs: NormNode): Env	
+identity	cps/environment.html#identity,Env_2	environment: identity(e: var Env): Name	
+localSection	cps/environment.html#localSection,Env,VarLet,NimNode	environment: localSection(e: var Env; n: VarLet; into: NimNode = nil)	
+localSection	cps/environment.html#localSection,Env,IdentDef,NimNode	environment: localSection(e: var Env; n: IdentDef; into: NimNode = nil)	
+localSection	cps/environment.html#localSection,Env,RoutineParam,NimNode	environment: localSection(e: var Env; n: RoutineParam; into: NimNode = nil)	
+rewriteReturn	cps/environment.html#rewriteReturn,Env,NormNode	environment: rewriteReturn(e: var Env; n: NormNode): NormNode	
+rewriteSymbolsIntoEnvDotField	cps/environment.html#rewriteSymbolsIntoEnvDotField,Env,NormNode	environment: rewriteSymbolsIntoEnvDotField(e: var Env; n: NormNode): NormNode	
+createContinuation	cps/environment.html#createContinuation,Env,Name,NimNode	environment: createContinuation(e: Env; name: Name; goto: NimNode): NimNode	
+genException	cps/environment.html#genException,Env	environment: genException(e: var Env): NimNode	
+createResult	cps/environment.html#createResult,Env	environment: createResult(env: Env; exported = false): ProcDef	
+createWhelp	cps/environment.html#createWhelp,Env,ProcDef,NormNode	environment: createWhelp(env: Env; n: ProcDef; goto: NormNode): ProcDef	
+createBootstrap	cps/environment.html#createBootstrap,Env,ProcDef,NormNode	environment: createBootstrap(env: Env; n: ProcDef; goto: NormNode): ProcDef	
+rewriteVoodoo	cps/environment.html#rewriteVoodoo,Env,NormNode	environment: rewriteVoodoo(env: Env; n: NormNode): NormNode	
